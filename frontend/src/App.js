@@ -1,13 +1,16 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import './App.css';
 import HomePage from './components/HomePage/HomePage';
+import LoginPage from './components/LoginPage/LoginPage';
+import ProfilePage from './components/ProfilePage/ProfilePage';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomePage/>} />
-        
+        <Route path='/sign-in' element={<LoginPage/>} /> 
+        <Route path='/profile' element={<ProfilePage/>} />       
       </Routes>    
     </BrowserRouter>
   );
