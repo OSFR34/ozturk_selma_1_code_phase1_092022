@@ -19,7 +19,7 @@ export default function Header() {
             </NavLink>
             <div>
                 {
-                    !isAuth ? <NavLink to="/sign-in" className={"main-nav-item"}>
+                    !isAuth ? <NavLink to="/login" className={"main-nav-item"}>
                     <i className="fa fa-user-circle"></i>
                     Sign In
                     </NavLink> :

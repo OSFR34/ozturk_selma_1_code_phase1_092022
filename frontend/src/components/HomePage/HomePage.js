@@ -6,8 +6,11 @@ import Hero from '../Hero/Hero'
 
 
 export default function Homepage() {
+
+
   return (
     <div>
+  
        <Header/>
        <main>
         <Hero/>

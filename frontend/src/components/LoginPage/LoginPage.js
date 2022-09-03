@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
+import axios from 'axios'
 
 export default function LoginPage() {
 
@@ -28,14 +29,13 @@ export default function LoginPage() {
     }
     const onFormSubmitFunction = (e) => {
         e.preventDefault()
-        console.log({
-        username: userNameState,
-        password: passwordState,
-        remember: rememberState
-        })
-        // avec axios j'envoie une demande post et dois etre envoyer à l'adresse login. 
+        axios.post('http://localhost:3001/api/v1/user/login',{
+            email:userNameState,
+            password:passwordState        
+        }).then(result => {
+            console.log(result)
+        }).catch(error => console.error(error))      
     }
-
 
   return (
     <div>
