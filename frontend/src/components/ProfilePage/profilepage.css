@@ -1,0 +1,33 @@
+#firstname,#lastname{
+    border:1px solid rgba(0,0,0,0.5);
+    outline:none;
+    box-shadow: none;
+    height:35px;
+    width:150px;
+    margin-right:10px;
+    border-radius: 2px;
+    padding-left:5px;
+    font-size:16px;
+}
+.button-group{
+    margin-top:10px;
+}
+.save-button,.cancel-button{
+    border:2px solid #00bc77;
+    color:#00bc77;
+    background-color: white;
+    outline:none;
+    box-shadow: none;
+    height:35px;
+    width:100px;
+    margin-right:10px;
+    border-radius: 2px;
+    padding-left:5px;
+}
+
+#firstname::placeholder{
+    font-size:16px;
+}
+#lastname::placeholder{
+    font-size:16px;
+}
