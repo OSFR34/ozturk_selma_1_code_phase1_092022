@@ -3,6 +3,7 @@ import './App.css';
 import HomePage from './components/HomePage/HomePage';
 import LoginPage from './components/LoginPage/LoginPage';
 import ProfilePage from './components/ProfilePage/ProfilePage';
+import DetailPage from './components/DetailPage/DetailPage';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage/>} />
         <Route path='/login' element={<LoginPage/>} /> 
-        <Route path='/profile' element={<ProfilePage/>} />       
+        <Route path='/profile' element={<ProfilePage/>} />  
+        <Route path='/transactions/:id' element={<DetailPage/>} />     
       </Routes>    
     </BrowserRouter>
   );

@@ -1,0 +1,62 @@
+.fa-angle-down:before {
+    font-size:24px;
+    color:#4c5c6b;
+    font-weight: 600;
+}
+.fa-angle-up:before {
+    font-size:24px;
+    color:#4c5c6b;
+    font-weight: 600;
+}
+.transaction-collapse{
+    width:100%;
+    background-color: white;
+}
+.transaction-item-parent{
+    display:grid;
+    grid-template-columns:  200px 200px 200px 200px ;
+    background-color: white;
+    font-weight: 500;
+    cursor:pointer;
+    border-bottom:1px solid #ccc; 
+}
+.transaction-item-parent div{
+    width: 150px;
+    padding:10px;
+}
+.date-column{
+    display:flex;
+    align-items: center;
+}
+.date-column span{
+    margin-left:15px;
+}
+.selection-collapse{
+    width: 100%!important;
+}
+.selection-collapse div{
+    width:100%!important;
+    text-align:left!important;
+    margin-left:21px;
+}
+.category-name{
+    margin-right:8px;
+}
+
+@media only screen and (max-width:768px) {
+    .transaction-item-parent{
+     
+        grid-template-columns:  190px 190px 190px 190px ;
+    
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .transaction-item-parent{     
+        grid-template-columns:  repeat(4, 1fr) ;    
+    }
+    .transaction-item-parent div{
+        width: 106px;
+        padding:2%;
+    }
+}

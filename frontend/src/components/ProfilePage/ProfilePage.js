@@ -66,6 +66,10 @@ export default function ProfilePage() {
         .catch(error => console.error(error))
 
     }
+    // Redirection vers la page Detail
+    const handleNavigateDetail = (e, id) => {
+       navigate(`/transactions/${id}`)
+    }
 
     return (
         <div>
@@ -88,7 +92,7 @@ export default function ProfilePage() {
 
                         <h1>Welcome Back<br />
                             {
-                                isAuth.user.firstName + ' ' + isAuth.user.lastName + '!'
+                                isAuth.user.firstName + ' ' + isAuth.user.lastName +' !'
                             }
                         </h1>
                         <button className="edit-button" onClick={handleEditOpen}>Edit Name</button>
@@ -103,7 +107,7 @@ export default function ProfilePage() {
                         <p className="account-amount-description">Available Balance</p>
                     </div>
                     <div className="account-content-wrapper cta">
-                        <button className="transaction-button">View transactions</button>
+                        <button className="transaction-button" onClick={(e) => handleNavigateDetail(e,1)}>View transactions</button>
                     </div>
                 </section>
                 <section className="account">
@@ -113,7 +117,7 @@ export default function ProfilePage() {
                         <p className="account-amount-description">Available Balance</p>
                     </div>
                     <div className="account-content-wrapper cta">
-                        <button className="transaction-button">View transactions</button>
+                        <button className="transaction-button" onClick={(e) => handleNavigateDetail(e,2)}>View transactions</button>
                     </div>
                 </section>
                 <section className="account">
@@ -123,7 +127,7 @@ export default function ProfilePage() {
                         <p className="account-amount-description">Current Balance</p>
                     </div>
                     <div className="account-content-wrapper cta">
-                        <button className="transaction-button">View transactions</button>
+                        <button className="transaction-button" onClick={(e) => handleNavigateDetail(e,3)}>View transactions</button>
                     </div>
                 </section>
             </main>
