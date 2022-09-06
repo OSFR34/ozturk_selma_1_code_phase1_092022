@@ -4,6 +4,7 @@ import logo from '../../images/argentBankLogo.png'
 
 import { useSelector,useDispatch } from 'react-redux'
 import Actions from '../../redux/actions'
+import './header.css'
 
 export default function Header() {
 

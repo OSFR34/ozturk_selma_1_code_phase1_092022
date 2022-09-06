@@ -1,0 +1,8 @@
+@media(max-width:768px){
+    .main-nav-logo-image{
+        width:100px;
+    }
+    .main-nav a{
+        font-size:12px;
+    }
+}

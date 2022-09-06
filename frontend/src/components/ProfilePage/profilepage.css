@@ -1,3 +1,10 @@
+.main.bg-dark{
+    background-color: #e0e6ed!important;
+    padding:30px 0;
+}
+.header h1{
+    color:black;
+}
 #firstname,#lastname{
     border:1px solid rgba(0,0,0,0.5);
     outline:none;
@@ -31,3 +38,4 @@
 #lastname::placeholder{
     font-size:16px;
 }
+
