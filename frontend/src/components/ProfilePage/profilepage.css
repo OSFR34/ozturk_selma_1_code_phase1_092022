@@ -38,4 +38,15 @@
 #lastname::placeholder{
     font-size:16px;
 }
+.error-message1{
+    z-index:9999;
+    padding:5px;
+    border-radius: 6px;
+    color:#fd4056;
+    font-weight: bold;
+    font-size:16px;
+    margin-bottom:30px;
+    text-align: center;
+}
+
 

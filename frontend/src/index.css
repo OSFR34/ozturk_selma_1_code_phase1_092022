@@ -75,7 +75,7 @@ html {
   
   .hero {
   background-image: url('./images/bank-tree.jpeg');
-  background-position: 0 -50px;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
