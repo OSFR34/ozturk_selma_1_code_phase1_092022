@@ -13,13 +13,14 @@ body {
   min-height: 100vh;
 }
 
-.main {
+.main, .bg-dark {
   flex: 1;
-}
-
-.bg-dark {
   background-color: #12002b;
 }
+
+/* .bg-dark {
+  background-color: #12002b;
+} */
 
 .sr-only {
   border: 0 !important;
@@ -147,6 +148,9 @@ body {
   border-radius: 50%;
   padding: 1rem;
 }
+/* .fa-user-circle:before {
+  font-size: 3rem;
+} */
 
 .feature-item {
   flex: 1;
